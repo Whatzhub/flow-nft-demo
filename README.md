@@ -26,11 +26,17 @@ git clone https://github.com/Whatzhub/flow-nft-demo
 - docker-compose up -d (for starting a Postgres instance for backend API)
 - npm run start:dev
 
-### 6. Install and launch the web app
+### 3. Install and launch the web app
 
 - cd ./web
 - npm install
 - npm run start:dev
+
+### 4. Install and launch the web app
+
+- Go to `localhost:3001` and start playing 🚀 !
+
+---
 
 ## Project Overview
 
@@ -45,6 +51,4 @@ Above is a basic diagram of the parts of this project contained in each folder, 
 - Chat with the team on the [Flow Discord server](https://discord.gg/xUdZxs82Rz)
 - Ask questions on the [Flow community forum](https://forum.onflow.org/t/kitty-items-marketplace-demo-dapp/759/5)
 
----
 
-🚀 Happy Hacking!
