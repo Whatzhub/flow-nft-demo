@@ -21,13 +21,13 @@ export const ItemImage = ({typeID}) => {
 
   useEffect(() => {
     async function getImage() {
-      let importedIcon = await import(`../svg/Items/item0${typeID}.svg`)
+      let importedIcon = await import(`../svg/Items/item0${typeID}.jpeg`)
       setItemImage(importedIcon.default)
     }
     if (typeID) getImage()
   }, [typeID])
 
-  return <Image maxW="64px" src={item} />
+  return <Image maxW="256 px" width="50%" src={item} />
 }
 
 export function AccountItemCluster({address, id}) {
@@ -63,7 +63,7 @@ export function AccountItemCluster({address, id}) {
               >
                 <HStack>
                   {BUSY && <Spinner mr="2" size="xs" />}{" "}
-                  <Text>List for 10 KIBBLE</Text>
+                  <Text>List for 10 USD</Text>
                 </HStack>
               </Button>
             </Td>

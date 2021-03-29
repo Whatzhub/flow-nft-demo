@@ -79,8 +79,10 @@ class MarketService {
   };
 
   buy = (account: string, itemID: number) => {
+    console.log(82, account, itemID)
     const authorization = this.flowService.authorizeMinter();
 
+    console.log(83, authorization)
     const transaction = fs
       .readFileSync(
         path.join(

@@ -12,6 +12,7 @@ function initMarketRouter(marketService: MarketService): Router {
     validateRequest,
     async (req: Request, res: Response) => {
       const { account, itemID } = req.body;
+      console.log(15, account, itemID)
       const tx = await marketService.buy(account, itemID);
       return res.send({
         transactionId: tx,

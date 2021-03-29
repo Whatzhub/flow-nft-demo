@@ -4,7 +4,7 @@ import * as fcl from "@onflow/fcl"
 
 export const currentUser = atom({
   key: "CURRENT_USER",
-  default: {addr: null, loggedIn: null, cid: null},
+  default: {addr: null, loggedIn: true, cid: null},
 })
 
 const tools = {

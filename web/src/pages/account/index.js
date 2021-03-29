@@ -33,8 +33,8 @@ import {
   Image,
 } from "@chakra-ui/react"
 
-import Cookie from "../../svg/cookie.svg"
-import BackPack from "../../svg/backpack.svg"
+import Cookie from "../../svg/store.svg"
+import BackPack from "../../svg/image.svg"
 
 export function MarketItemsCount() {
   let l = 0
@@ -60,7 +60,7 @@ export function MintButton({address}) {
 
   return (
     <Button disabled={items.status !== IDLE} onClick={items.mint}>
-      Mint Item
+      Mint NFT Photo
     </Button>
   )
 }
@@ -75,12 +75,12 @@ export function InfoBanner({address}) {
       type: "info",
       title: "Initialize Your Account",
       text:
-        "You need to initialize your account before you can receive Kibble.",
+        "You need to initialize your account before you can receive USD.",
     },
     noKibble: {
       type: "info",
-      title: "Get Kibble",
-      text: "You need Kibble to buy Kitty Items.",
+      title: "Get USD",
+      text: "You need USD to buy NFT Photos.",
     },
   }
 
@@ -154,8 +154,8 @@ export function Page() {
           <TabList>
             <Tab fontSize="2xl">
               <HStack>
-                <Image src={BackPack} />
-                <Box>{cu.addr === address ? "My" : "User"} Items</Box>
+                <Image src={BackPack} width="50px"/>
+                <Box>{cu.addr === address ? "My" : "User"} Photos</Box>
               </HStack>
               <Suspense fallback={null}>
                 <AccountItemsCount address={address} />
@@ -163,8 +163,8 @@ export function Page() {
             </Tab>
             <Tab fontSize="2xl">
               <HStack>
-                <Image src={Cookie} />
-                <Box>Items Marketplace</Box>
+                <Image src={Cookie} width="50px"/>
+                <Box>Photos Marketplace</Box>
               </HStack>
               <Suspense fallback={null}>
                 <MarketItemsCount />

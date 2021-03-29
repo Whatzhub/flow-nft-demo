@@ -12,7 +12,7 @@ import {
   Image,
 } from "@chakra-ui/react"
 
-import Logo from "../svg/logo-kv.svg"
+import Logo from "../svg/pictta-logo.png"
 
 export function Page() {
   const [user, loggedIn, {signUp, logIn}] = useCurrentUser()
@@ -25,8 +25,8 @@ export function Page() {
         <Flex>
           <Center mr="4">
             <HStack>
-              <Image src={Logo} />
-              <Heading size="lg">Kitty Items</Heading>
+              <Image src={Logo} width="75%"/>
+              {/* <Heading size="lg">Kitty Items</Heading> */}
             </HStack>
           </Center>
           <Spacer />

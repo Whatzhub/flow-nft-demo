@@ -14,7 +14,7 @@ import {
   Image,
 } from "@chakra-ui/react"
 
-import Logo from "../svg/logo-kv.svg"
+import Logo from "../svg/pictta-logo.png"
 
 export function AuthCluster() {
   const [user, loggedIn, {signUp, logIn, logOut}] = useCurrentUser()
@@ -23,8 +23,8 @@ export function AuthCluster() {
     <Box mb="4">
       <Flex>
         <HStack>
-          <Image src={Logo} />
-          <Heading size="lg">Kitty Items</Heading>
+          <Image src={Logo} width="75%"/>
+          {/* <Heading size="lg">Kitty Items</Heading> */}
         </HStack>
         <Spacer />
         <Center>
@@ -45,7 +45,7 @@ export function AuthCluster() {
         <Box p="2">
           <HStack>
             <Image src={Logo} />
-            <Heading size="lg">Kitty Items</Heading>
+            {/* <Heading size="lg">Kitty Items</Heading> */}
           </HStack>
         </Box>
         <Spacer />
