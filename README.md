@@ -32,7 +32,7 @@ git clone https://github.com/Whatzhub/flow-nft-demo
 - npm install
 - npm run start:dev
 
-### 4. Install and launch the web app
+### 4. Test out the app
 
 - Go to `localhost:3001` and start playing 🚀 !
 
